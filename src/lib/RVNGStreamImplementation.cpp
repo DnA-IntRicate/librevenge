@@ -31,10 +31,6 @@
 #include "RVNGOLEStream.h"
 #include "RVNGZipStream.h"
 
-#ifndef S_ISREG
-#define S_ISREG(x) (((x) & S_IFMT) == S_IFREG)
-#endif
-
 namespace librevenge
 {
 

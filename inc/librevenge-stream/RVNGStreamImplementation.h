@@ -21,8 +21,11 @@
 #define RVNGSTREAMIMPLEMENTATION_H
 
 #include "librevenge-stream-api.h"
-
 #include "RVNGStream.h"
+
+#ifndef S_ISREG
+#define S_ISREG(x) (((x) & S_IFMT) == S_IFREG)
+#endif
 
 namespace librevenge
 {
